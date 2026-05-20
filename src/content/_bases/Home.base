@@ -149,3 +149,7 @@ views:
     dateProperty: file.ctime
     showTags: false
     showDraftStatus: false
+  - type: cms
+    name: All
+    rowHeight: medium
+    cardSize: 240
