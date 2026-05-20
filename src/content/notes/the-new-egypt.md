@@ -1,15 +1,16 @@
 ---
 title: the new egypt
 description: ""
-publishedAt: ""
+publishedAt: 2023-11-20
 category: ""
 tags:
   - thoughts
   - compilation
-startDate: 2026-06-20
-date: 2026-06-20
-endDate: 2026-06-20
+date: 2026-05-20
+aliases:
+  - the new egypt
 ---
+
 
 ## Social-spiritual reform
 
