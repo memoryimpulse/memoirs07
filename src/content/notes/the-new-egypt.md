@@ -1,8 +1,8 @@
 ---
 title: the new egypt
-description: ""
+description: humanizing universe
 publishedAt: 2023-11-20
-category: ""
+category: spiritual science
 tags:
   - thoughts
   - compilation
