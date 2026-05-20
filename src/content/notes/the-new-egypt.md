@@ -6,7 +6,7 @@ category: ""
 tags:
   - thoughts
   - compilation
-date: 2026-06-20
+startDate: 2026-06-20
 ---
 
 ## Social-spiritual reform
