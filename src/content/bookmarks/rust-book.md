@@ -7,3 +7,4 @@ publishedAt: 2023-05-15
 createdAt: 2024-01-02
 description: "The official book for learning Rust, covering everything from basic syntax to advanced concepts"
 --- 
+
