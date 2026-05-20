@@ -26,3 +26,7 @@ pnpm-debug.log*
 # wrangler files
 .wrangler
 .dev.vars
+
+# Obsidian workspace files
+**/.obsidian/workspace.json
+**/.obsidian/workspace-mobile.json

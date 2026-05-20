@@ -1,0 +1,380 @@
+{
+  "projectRoot": "../..",
+  "configFilePath": "../config.ts",
+  "contentTypes": [
+    {
+      "id": "content-type-1779263221566-fjqls5kuw",
+      "name": "Blog",
+      "folder": "blog",
+      "fileOrganization": "file",
+      "enabled": true,
+      "indexFileName": "index"
+    },
+    {
+      "id": "content-type-1779263221566-33uccdqz7",
+      "name": "Bookmarks",
+      "folder": "bookmarks",
+      "fileOrganization": "file",
+      "enabled": true,
+      "indexFileName": "index"
+    },
+    {
+      "id": "content-type-1779263221566-q2j78d410",
+      "name": "Experience",
+      "folder": "experience",
+      "fileOrganization": "file",
+      "enabled": true,
+      "indexFileName": "index"
+    },
+    {
+      "id": "content-type-1779263221566-oeys7my65",
+      "name": "Notes",
+      "folder": "notes",
+      "fileOrganization": "file",
+      "enabled": true,
+      "indexFileName": "index"
+    },
+    {
+      "id": "content-type-1779263221566-6h8ul65m4",
+      "name": "Projects",
+      "folder": "projects",
+      "fileOrganization": "file",
+      "enabled": true,
+      "indexFileName": "index"
+    },
+    {
+      "id": "content-type-1779263221566-dvu57aaqj",
+      "name": "Site",
+      "folder": "site",
+      "fileOrganization": "file",
+      "enabled": true,
+      "indexFileName": "index"
+    }
+  ],
+  "frontmatterProperties": {
+    "content-type-1779263221566-fjqls5kuw": {
+      "titleProperty": "title",
+      "descriptionProperty": "description",
+      "tagsProperty": "tags",
+      "hasDraftStatus": false,
+      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\npublishedAt: \"\"\ntags: []\n---\n"
+    },
+    "content-type-1779263221566-33uccdqz7": {
+      "titleProperty": "title",
+      "descriptionProperty": "description",
+      "hasDraftStatus": false,
+      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\n---\n"
+    },
+    "content-type-1779263221566-q2j78d410": {
+      "titleProperty": "title",
+      "descriptionProperty": "description",
+      "hasDraftStatus": false,
+      "template": "---\ntitle: \"{{title}}\"\nlogo: \"\"\ndescription: \"\"\nstartDate: \"\"\ncurrent: true\nendDate: \"\"\n---\n"
+    },
+    "content-type-1779263221566-oeys7my65": {
+      "titleProperty": "title",
+      "descriptionProperty": "description",
+      "hasDraftStatus": false,
+      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\npublishedAt: \"\"\ncategory: \"\"\n---\n"
+    },
+    "content-type-1779263221566-6h8ul65m4": {
+      "titleProperty": "title",
+      "descriptionProperty": "description",
+      "hasDraftStatus": false,
+      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\n---\n"
+    },
+    "content-type-1779263221566-dvu57aaqj": {
+      "hasDraftStatus": false,
+      "template": "---\n---\n"
+    }
+  },
+  "attachmentHandlingMode": "subfolder",
+  "preset": "vanilla",
+  "presetName": "",
+  "presetsRepo": "davidvkimball/vaultcms-presets",
+  "enableEditingToolbar": false,
+  "enableExtendedFileTypes": false,
+  "enabledPlugins": [
+    "astro-composer",
+    "bases-cms",
+    "editing-toolbar",
+    "home-base",
+    "image-manager",
+    "property-over-file-name",
+    "seo",
+    "ui-tweaker",
+    "data-files-editor",
+    "explorer-focus",
+    "file-name-history",
+    "omnisearch",
+    "settings-search",
+    "tag-wrangler",
+    "zenmode"
+  ],
+  "disabledPlugins": [],
+  "theme": "",
+  "basesCMSConfig": {
+    "views": []
+  },
+  "astroComposerConfig": {
+    "customContentTypes": [
+      {
+        "id": "content-type-1779263221566-fjqls5kuw",
+        "name": "Blog",
+        "folder": "blog",
+        "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\npublishedAt: \"\"\ntags: []\n---\n",
+        "enabled": true,
+        "linkBasePath": "/blog/",
+        "creationMode": "file",
+        "indexFileName": "index"
+      },
+      {
+        "id": "content-type-1779263221566-33uccdqz7",
+        "name": "Bookmarks",
+        "folder": "bookmarks",
+        "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\n---\n",
+        "enabled": true,
+        "linkBasePath": "/bookmarks/",
+        "creationMode": "file",
+        "indexFileName": "index"
+      },
+      {
+        "id": "content-type-1779263221566-q2j78d410",
+        "name": "Experience",
+        "folder": "experience",
+        "template": "---\ntitle: \"{{title}}\"\nlogo: \"\"\ndescription: \"\"\nstartDate: \"\"\ncurrent: true\nendDate: \"\"\n---\n",
+        "enabled": true,
+        "linkBasePath": "/experience/",
+        "creationMode": "file",
+        "indexFileName": "index"
+      },
+      {
+        "id": "content-type-1779263221566-oeys7my65",
+        "name": "Notes",
+        "folder": "notes",
+        "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\npublishedAt: \"\"\ncategory: \"\"\n---\n",
+        "enabled": true,
+        "linkBasePath": "/notes/",
+        "creationMode": "file",
+        "indexFileName": "index"
+      },
+      {
+        "id": "content-type-1779263221566-6h8ul65m4",
+        "name": "Projects",
+        "folder": "projects",
+        "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\n---\n",
+        "enabled": true,
+        "linkBasePath": "/projects/",
+        "creationMode": "file",
+        "indexFileName": "index"
+      },
+      {
+        "id": "content-type-1779263221566-dvu57aaqj",
+        "name": "Site",
+        "folder": "site",
+        "template": "---\n---\n",
+        "enabled": true,
+        "linkBasePath": "/site/",
+        "creationMode": "file",
+        "indexFileName": "index"
+      }
+    ],
+    "defaultTemplate": "",
+    "configFilePath": "../config.ts",
+    "terminalProjectRootPath": "../..",
+    "showMdxFilesInExplorer": false
+  },
+  "seoConfig": {
+    "titleProperty": "title",
+    "descriptionProperty": "description",
+    "scanDirectories": "blog,bookmarks,experience,notes,projects,site",
+    "useFilenameAsTitle": false,
+    "useFilenameAsSlug": true,
+    "enableMDXSupport": false
+  },
+  "propertyOverFileName": {
+    "propertyKey": "title",
+    "enableMdxSupport": false
+  },
+  "imageManager": {
+    "enableRenameOnPaste": true,
+    "enableRenameOnDrop": true,
+    "imageNameTemplate": "",
+    "attachmentLocation": "obsidian",
+    "customAttachmentPath": "./assets",
+    "defaultProvider": "unsplash",
+    "unsplashProxyServer": "",
+    "pexelsApiKey": "",
+    "pexelsApiKeySecretId": "",
+    "pixabayApiKey": "",
+    "pixabayApiKeySecretId": "",
+    "defaultOrientation": "any",
+    "defaultImageSize": "large",
+    "enablePropertyPaste": true,
+    "propertyLinkFormat": "obsidian",
+    "customPropertyLinkFormat": "{image-url}",
+    "defaultPropertyName": "banner",
+    "defaultIconPropertyName": "icon",
+    "altTextProperty": "",
+    "autoConvertRemoteImages": false,
+    "convertOnNoteOpen": false,
+    "convertOnNoteSave": false,
+    "processBackgroundChanges": true,
+    "showRenameDialog": true,
+    "autoRename": false,
+    "dupNumberDelimiter": "-",
+    "dupNumberAtStart": false,
+    "disableRenameNotice": false,
+    "enableDescriptiveImages": true,
+    "insertSize": "",
+    "insertReferral": true,
+    "insertBackLink": false,
+    "appendReferral": false,
+    "banner": {
+      "properties": {
+        "imageProperty": "banner",
+        "iconProperty": "icon",
+        "hidePropertyEnabled": false,
+        "hideProperty": ""
+      },
+      "desktop": {
+        "enabled": true,
+        "height": 240,
+        "viewOffset": 0,
+        "noteOffset": -32,
+        "bannerRadiusEnabled": false,
+        "borderRadius": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "padding": 8,
+        "fade": true,
+        "animation": false,
+        "iconEnabled": false,
+        "iconSize": 96,
+        "iconRadius": 8,
+        "iconBackground": true,
+        "iconBorder": 2,
+        "iconFrame": true,
+        "iconAlignmentH": "flex-start",
+        "iconAlignmentV": "flex-end",
+        "iconOffsetX": 0,
+        "iconOffsetY": -24
+      },
+      "tablet": {
+        "enabled": true,
+        "height": 190,
+        "viewOffset": 0,
+        "noteOffset": -32,
+        "bannerRadiusEnabled": false,
+        "borderRadius": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "padding": 8,
+        "fade": true,
+        "animation": false,
+        "iconEnabled": false,
+        "iconSize": 96,
+        "iconRadius": 8,
+        "iconBackground": true,
+        "iconBorder": 2,
+        "iconFrame": true,
+        "iconAlignmentH": "flex-start",
+        "iconAlignmentV": "flex-end",
+        "iconOffsetX": 0,
+        "iconOffsetY": -24
+      },
+      "phone": {
+        "enabled": true,
+        "height": 160,
+        "viewOffset": 0,
+        "noteOffset": -32,
+        "bannerRadiusEnabled": false,
+        "borderRadius": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "padding": 8,
+        "fade": true,
+        "animation": false,
+        "iconEnabled": false,
+        "iconSize": 56,
+        "iconRadius": 8,
+        "iconBackground": true,
+        "iconBorder": 2,
+        "iconFrame": true,
+        "iconAlignmentH": "flex-start",
+        "iconAlignmentV": "flex-end",
+        "iconOffsetX": 0,
+        "iconOffsetY": -24
+      }
+    },
+    "supportedExtensions": [
+      "md",
+      "mdx"
+    ],
+    "debugMode": false
+  },
+  "homeBase": {
+    "homeBaseType": "File",
+    "homeBaseValue": "_bases/Home.base",
+    "openOnStartup": true,
+    "openViewMode": "default",
+    "openMode": "replace-all",
+    "manualOpenMode": "retain",
+    "replaceNewTab": false,
+    "newTabMode": "only-when-empty",
+    "openWhenAllTabsClosed": false,
+    "useDifferentFileForNewTab": false,
+    "newTabType": "File",
+    "newTabValue": "",
+    "newTabSeparateMobile": false,
+    "mobileNewTabType": "File",
+    "mobileNewTabValue": "",
+    "showStickyHomeIcon": true,
+    "stickyIconName": "home",
+    "hideHomeTabHeader": true,
+    "replaceMobileNewTab": false,
+    "separateMobile": false,
+    "mobileHomeBaseType": "File",
+    "mobileHomeBaseValue": "",
+    "commandOnOpen": "",
+    "waitForGitSync": false,
+    "gitSyncTimeout": 3,
+    "revertView": false,
+    "autoScroll": false,
+    "hideReleaseNotes": false,
+    "stickyIconReplaceTab": false
+  },
+  "explorerFocus": {
+    "showRightClickMenu": true,
+    "showFileExplorerIcon": true,
+    "focusLevel": "parent",
+    "hideAncestorFolders": false
+  },
+  "ignoreConfig": {
+    "gitIgnoreConfigured": true,
+    "viteIgnoreConfigured": true
+  },
+  "gitConfig": {
+    "enabled": true,
+    "isPrivate": false,
+    "branchName": "main",
+    "autoConfigureObsidianGit": true,
+    "repoName": "memoirs",
+    "repoDescription": "thinking in the threshold"
+  },
+  "deploymentPlatform": "",
+  "resolvePublicImages": false,
+  "runWizardOnStartup": false,
+  "wizardCompleted": true,
+  "enableMdxSupport": false,
+  "defaultContentTypeId": "content-type-1779263221566-fjqls5kuw"
+}
