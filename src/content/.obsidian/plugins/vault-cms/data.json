@@ -7,7 +7,7 @@
       "name": "Blog",
       "folder": "blog",
       "fileOrganization": "file",
-      "enabled": true,
+      "enabled": false,
       "indexFileName": "index"
     },
     {
@@ -23,7 +23,7 @@
       "name": "Experience",
       "folder": "experience",
       "fileOrganization": "file",
-      "enabled": true,
+      "enabled": false,
       "indexFileName": "index"
     },
     {
@@ -39,7 +39,7 @@
       "name": "Projects",
       "folder": "projects",
       "fileOrganization": "file",
-      "enabled": true,
+      "enabled": false,
       "indexFileName": "index"
     },
     {
@@ -65,8 +65,7 @@
       "descriptionProperty": "description",
       "hasDraftStatus": true,
       "template": "---\ntitle: \"{{title}}\"\ntype: \"\"\nauthor: \"\"\nurl: \"\"\npublishedAt: \"\"\ncreatedAt: \"\"\ndescription: \"\"\n---\n",
-      "tagsProperty": "tags",
-      "dateProperty": "startDate"
+      "tagsProperty": "tags"
     },
     "content-type-1779263221566-q2j78d410": {
       "titleProperty": "title",
@@ -80,9 +79,8 @@
       "titleProperty": "title",
       "descriptionProperty": "description",
       "hasDraftStatus": true,
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\npublishedAt: \"\"\ncategory: \"\"\ntags: []\ndate:\n---\n",
-      "tagsProperty": "tags",
-      "dateProperty": "startDate"
+      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\npublishedAt: \"\"\ncategory: \"\"\ntags: []\ndate: \"\"\n---\n",
+      "tagsProperty": "tags"
     },
     "content-type-1779263221566-6h8ul65m4": {
       "titleProperty": "title",
@@ -94,8 +92,7 @@
     },
     "content-type-1779263221566-dvu57aaqj": {
       "hasDraftStatus": false,
-      "template": "---\n---\n",
-      "dateProperty": "startDate"
+      "template": "---\n---\n"
     }
   },
   "attachmentHandlingMode": "subfolder",
@@ -132,19 +129,9 @@
         "id": "content-type-1779263221566-oeys7my65",
         "name": "Notes",
         "folder": "notes",
-        "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\npublishedAt: \"\"\ncategory: \"\"\ntags: []\ndate:\n---\n",
+        "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\npublishedAt: \"\"\ncategory: \"\"\ntags: []\ndate: \"\"\n---\n",
         "enabled": true,
         "linkBasePath": "/notes/",
-        "creationMode": "file",
-        "indexFileName": "index"
-      },
-      {
-        "id": "content-type-1779263221566-fjqls5kuw",
-        "name": "Blog",
-        "folder": "blog",
-        "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\npublishedAt: \"\"\ntags: []\n---\n",
-        "enabled": true,
-        "linkBasePath": "/blog/",
         "creationMode": "file",
         "indexFileName": "index"
       },
@@ -159,26 +146,6 @@
         "indexFileName": "index"
       },
       {
-        "id": "content-type-1779263221566-q2j78d410",
-        "name": "Experience",
-        "folder": "experience",
-        "template": "---\ntitle: \"{{title}}\"\nlogo: \"\"\ndescription: \"\"\nstartDate: \"\"\ncurrent: true\nendDate: \"\"\n---\n",
-        "enabled": true,
-        "linkBasePath": "/experience/",
-        "creationMode": "file",
-        "indexFileName": "index"
-      },
-      {
-        "id": "content-type-1779263221566-6h8ul65m4",
-        "name": "Projects",
-        "folder": "projects",
-        "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\ntags: []\n---\n",
-        "enabled": true,
-        "linkBasePath": "/projects/",
-        "creationMode": "file",
-        "indexFileName": "index"
-      },
-      {
         "id": "content-type-1779263221566-dvu57aaqj",
         "name": "Site",
         "folder": "site",
@@ -189,7 +156,7 @@
         "indexFileName": "index"
       }
     ],
-    "defaultTemplate": "---\ntitle: \"{{title}}\"\ndescription: \"\"\npublishedAt: \"\"\ncategory: \"\"\ntags: []\ndate:\n---\n",
+    "defaultTemplate": "---\ntitle: \"{{title}}\"\ndescription: \"\"\npublishedAt: \"\"\ncategory: \"\"\ntags: []\ndate: \"\"\n---\n",
     "configFilePath": "../config.ts",
     "terminalProjectRootPath": "../..",
     "showMdxFilesInExplorer": false,
@@ -197,8 +164,7 @@
     "postsCreationMode": "file",
     "postsIndexFileName": "index",
     "syncDraftDate": true,
-    "draftDetectionMode": "underscore-prefix",
-    "publishDateField": "startDate"
+    "draftDetectionMode": "underscore-prefix"
   },
   "seoConfig": {
     "titleProperty": "title",

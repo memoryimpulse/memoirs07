@@ -1,64 +1,108 @@
-defaultView: Notes
+defaultView: "Notes"
 filters:
   and:
     - file.ext == "md"
+
 properties:
-  file.fullname:
+  "file.fullname":
     displayName: Full File Name
-  file.name:
+  "file.name":
     displayName: Name
-  note.date:
+  "note.date":
     displayName: Date
-  note.description:
+  "note.description":
     displayName: Description
-  note.draft:
+  "note.draft":
     displayName: Draft
-  note.pubDate:
+  "note.pubDate":
     displayName: PubDate
-  note.startDate:
+  "note.startDate":
     displayName: StartDate
-  note.tags:
+  "note.tags":
     displayName: Tags
-  note.title:
+  "note.title":
     displayName: Title
+
 views:
   - type: cms
-    name: Notes
+    name: "Notes"
     filters:
       and:
         - file.folder.startsWith("notes")
     sort:
       - property: file.ctime
         direction: DESC
-    imageFormat: cover
+    imageFormat: "cover"
     showDate: true
     customizeNewButton: true
-    newNoteLocation: notes
-    fallbackToEmbeds: if-empty
+    newNoteLocation: "notes"
+    fallbackToEmbeds: "if-empty"
     propertyDisplay1: file.fullname
     showTextPreview: true
-    propertyLabels: above
+    propertyLabels: "above"
     titleProperty: note.title
     dateProperty: file.ctime
     descriptionProperty: note.description
     showTags: false
     showDraftStatus: false
   - type: cms
-    name: Blog
+    name: "Bookmarks"
+    filters:
+      and:
+        - file.folder.startsWith("bookmarks")
+    sort:
+      - property: file.ctime
+        direction: DESC
+    imageFormat: "cover"
+    showDate: true
+    customizeNewButton: true
+    newNoteLocation: "bookmarks"
+    fallbackToEmbeds: "if-empty"
+    propertyDisplay1: file.fullname
+    showTextPreview: true
+    propertyLabels: "above"
+    titleProperty: note.title
+    dateProperty: file.ctime
+    descriptionProperty: note.description
+    showTags: false
+    showDraftStatus: false
+  - type: cms
+    name: "Site"
+    filters:
+      and:
+        - file.folder.startsWith("site")
+    sort:
+      - property: file.ctime
+        direction: DESC
+    imageFormat: "cover"
+    showDate: true
+    customizeNewButton: true
+    newNoteLocation: "site"
+    fallbackToEmbeds: "if-empty"
+    propertyDisplay1: file.fullname
+    showTextPreview: true
+    propertyLabels: "above"
+    titleProperty: file.fullname
+    titlePropertyNested: file.fullname
+    dateProperty: file.ctime
+    showTags: false
+    showDraftStatus: false
+  - type: cms
+    name: "Blog"
     filters:
       and:
         - file.folder.startsWith("blog")
     sort:
       - property: file.ctime
         direction: DESC
-    imageFormat: cover
+    imageFormat: "cover"
     showDate: true
     customizeNewButton: true
-    newNoteLocation: blog
-    fallbackToEmbeds: if-empty
+    newNoteLocation: "blog"
+    fallbackToEmbeds: "if-empty"
     propertyDisplay1: file.fullname
     showTextPreview: true
-    propertyLabels: above
+    propertyLabels: "above"
     titleProperty: note.title
     dateProperty: file.ctime
     descriptionProperty: note.description
@@ -66,90 +110,48 @@ views:
     tagsProperty: note.tags
     showDraftStatus: false
   - type: cms
-    name: Bookmarks
-    filters:
-      and:
-        - file.folder.startsWith("bookmarks")
-    sort:
-      - property: file.ctime
-        direction: DESC
-    imageFormat: cover
-    showDate: true
-    customizeNewButton: true
-    newNoteLocation: bookmarks
-    fallbackToEmbeds: if-empty
-    propertyDisplay1: file.fullname
-    showTextPreview: true
-    propertyLabels: above
-    titleProperty: note.title
-    dateProperty: file.ctime
-    descriptionProperty: note.description
-    showTags: false
-    showDraftStatus: false
-  - type: cms
-    name: Experience
+    name: "Experience"
     filters:
       and:
         - file.folder.startsWith("experience")
     sort:
       - property: file.ctime
         direction: DESC
-    imageFormat: cover
+    imageFormat: "cover"
     showDate: true
     customizeNewButton: true
-    newNoteLocation: experience
-    fallbackToEmbeds: if-empty
+    newNoteLocation: "experience"
+    fallbackToEmbeds: "if-empty"
     propertyDisplay1: file.fullname
     showTextPreview: true
-    propertyLabels: above
+    propertyLabels: "above"
     titleProperty: note.title
     dateProperty: file.ctime
     descriptionProperty: note.description
     showTags: false
     showDraftStatus: false
   - type: cms
-    name: Projects
+    name: "Projects"
     filters:
       and:
         - file.folder.startsWith("projects")
     sort:
       - property: file.ctime
         direction: DESC
-    imageFormat: cover
+    imageFormat: "cover"
     showDate: true
     customizeNewButton: true
-    newNoteLocation: projects
-    fallbackToEmbeds: if-empty
+    newNoteLocation: "projects"
+    fallbackToEmbeds: "if-empty"
     propertyDisplay1: file.fullname
     showTextPreview: true
-    propertyLabels: above
+    propertyLabels: "above"
     titleProperty: note.title
     dateProperty: file.ctime
     descriptionProperty: note.description
     showTags: false
     showDraftStatus: false
   - type: cms
-    name: Site
-    filters:
-      and:
-        - file.folder.startsWith("site")
-    sort:
-      - property: file.ctime
-        direction: DESC
-    imageFormat: cover
-    showDate: true
-    customizeNewButton: true
-    newNoteLocation: site
-    fallbackToEmbeds: if-empty
-    propertyDisplay1: file.fullname
-    showTextPreview: true
-    propertyLabels: above
-    titleProperty: file.fullname
-    titlePropertyNested: file.fullname
-    dateProperty: file.ctime
-    showTags: false
-    showDraftStatus: false
-  - type: cms
-    name: All
-    rowHeight: medium
+    name: "All"
+    rowHeight: "medium"
     cardSize: 240
