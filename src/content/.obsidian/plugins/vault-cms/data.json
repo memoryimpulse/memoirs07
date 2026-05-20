@@ -56,36 +56,46 @@
       "titleProperty": "title",
       "descriptionProperty": "description",
       "tagsProperty": "tags",
-      "hasDraftStatus": false,
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\npublishedAt: \"\"\ntags: []\n---\n"
+      "hasDraftStatus": true,
+      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\npublishedAt: \"\"\ntags: []\n---\n",
+      "dateProperty": "startDate"
     },
     "content-type-1779263221566-33uccdqz7": {
       "titleProperty": "title",
       "descriptionProperty": "description",
-      "hasDraftStatus": false,
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\n---\n"
+      "hasDraftStatus": true,
+      "template": "---\ntitle: \"{{title}}\"\ntype: \"\"\nauthor: \"\"\nurl: \"\"\npublishedAt: \"\"\ncreatedAt: \"\"\ndescription: \"\"\n---\n",
+      "tagsProperty": "tags",
+      "dateProperty": "startDate"
     },
     "content-type-1779263221566-q2j78d410": {
       "titleProperty": "title",
       "descriptionProperty": "description",
-      "hasDraftStatus": false,
-      "template": "---\ntitle: \"{{title}}\"\nlogo: \"\"\ndescription: \"\"\nstartDate: \"\"\ncurrent: true\nendDate: \"\"\n---\n"
+      "hasDraftStatus": true,
+      "template": "---\ntitle: \"{{title}}\"\nlogo: \"\"\ndescription: \"\"\nstartDate: \"\"\ncurrent: true\nendDate: \"\"\n---\n",
+      "tagsProperty": "tags",
+      "dateProperty": "startDate"
     },
     "content-type-1779263221566-oeys7my65": {
       "titleProperty": "title",
       "descriptionProperty": "description",
-      "hasDraftStatus": false,
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\npublishedAt: \"\"\ncategory: \"\"\n---\n"
+      "hasDraftStatus": true,
+      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\npublishedAt: \"\"\ncategory: \"\"\ntags: []\ndate:\n---\n",
+      "tagsProperty": "tags",
+      "dateProperty": "startDate"
     },
     "content-type-1779263221566-6h8ul65m4": {
       "titleProperty": "title",
       "descriptionProperty": "description",
-      "hasDraftStatus": false,
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\n---\n"
+      "hasDraftStatus": true,
+      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\ntags: []\n---\n",
+      "tagsProperty": "tags",
+      "dateProperty": "startDate"
     },
     "content-type-1779263221566-dvu57aaqj": {
       "hasDraftStatus": false,
-      "template": "---\n---\n"
+      "template": "---\n---\n",
+      "dateProperty": "startDate"
     }
   },
   "attachmentHandlingMode": "subfolder",
@@ -119,6 +129,16 @@
   "astroComposerConfig": {
     "customContentTypes": [
       {
+        "id": "content-type-1779263221566-oeys7my65",
+        "name": "Notes",
+        "folder": "notes",
+        "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\npublishedAt: \"\"\ncategory: \"\"\ntags: []\ndate:\n---\n",
+        "enabled": true,
+        "linkBasePath": "/notes/",
+        "creationMode": "file",
+        "indexFileName": "index"
+      },
+      {
         "id": "content-type-1779263221566-fjqls5kuw",
         "name": "Blog",
         "folder": "blog",
@@ -132,7 +152,7 @@
         "id": "content-type-1779263221566-33uccdqz7",
         "name": "Bookmarks",
         "folder": "bookmarks",
-        "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\n---\n",
+        "template": "---\ntitle: \"{{title}}\"\ntype: \"\"\nauthor: \"\"\nurl: \"\"\npublishedAt: \"\"\ncreatedAt: \"\"\ndescription: \"\"\n---\n",
         "enabled": true,
         "linkBasePath": "/bookmarks/",
         "creationMode": "file",
@@ -149,20 +169,10 @@
         "indexFileName": "index"
       },
       {
-        "id": "content-type-1779263221566-oeys7my65",
-        "name": "Notes",
-        "folder": "notes",
-        "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\npublishedAt: \"\"\ncategory: \"\"\n---\n",
-        "enabled": true,
-        "linkBasePath": "/notes/",
-        "creationMode": "file",
-        "indexFileName": "index"
-      },
-      {
         "id": "content-type-1779263221566-6h8ul65m4",
         "name": "Projects",
         "folder": "projects",
-        "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\n---\n",
+        "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\ntags: []\n---\n",
         "enabled": true,
         "linkBasePath": "/projects/",
         "creationMode": "file",
@@ -179,10 +189,16 @@
         "indexFileName": "index"
       }
     ],
-    "defaultTemplate": "",
+    "defaultTemplate": "---\ntitle: \"{{title}}\"\ndescription: \"\"\npublishedAt: \"\"\ncategory: \"\"\ntags: []\ndate:\n---\n",
     "configFilePath": "../config.ts",
     "terminalProjectRootPath": "../..",
-    "showMdxFilesInExplorer": false
+    "showMdxFilesInExplorer": false,
+    "postsFolder": "notes",
+    "postsCreationMode": "file",
+    "postsIndexFileName": "index",
+    "syncDraftDate": true,
+    "draftDetectionMode": "underscore-prefix",
+    "publishDateField": "startDate"
   },
   "seoConfig": {
     "titleProperty": "title",
@@ -376,5 +392,5 @@
   "runWizardOnStartup": false,
   "wizardCompleted": true,
   "enableMdxSupport": false,
-  "defaultContentTypeId": "content-type-1779263221566-fjqls5kuw"
+  "defaultContentTypeId": "content-type-1779263221566-oeys7my65"
 }

@@ -38,7 +38,7 @@
     "editor:configure-toolbar"
   ],
   "newFileLocation": "folder",
-  "newFileFolderPath": "blog",
+  "newFileFolderPath": "notes",
   "newLinkFormat": "relative",
   "mobileQuickRibbonItem": "",
   "vimMode": false,

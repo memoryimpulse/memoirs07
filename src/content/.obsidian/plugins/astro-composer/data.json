@@ -1,5 +1,5 @@
 {
-  "defaultTemplate": "---\ntitle: \"{{title}}\"\ndescription: \"\"\npublishedAt: \"\"\ntags: []\n---\n",
+  "defaultTemplate": "---\ntitle: \"{{title}}\"\ndescription: \"\"\npublishedAt: \"\"\ncategory: \"\"\ntags: []\ndate:\n---\n",
   "autoInsertProperties": true,
   "dateFormat": "YYYY-MM-DD",
   "enableCopyHeadingLink": true,
@@ -24,19 +24,19 @@
       "creationMode": "file",
       "indexFileName": "index",
       "ignoreSubfolders": false,
-      "enableUnderscorePrefix": false
+      "enableUnderscorePrefix": true
     },
     {
       "id": "content-type-1779263221566-33uccdqz7",
       "name": "Bookmarks",
       "folder": "bookmarks",
       "linkBasePath": "/bookmarks/",
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\n---\n",
+      "template": "---\ntitle: \"{{title}}\"\ntype: \"\"\nauthor: \"\"\nurl: \"\"\npublishedAt: \"\"\ncreatedAt: \"\"\ndescription: \"\"\n---\n",
       "enabled": true,
       "creationMode": "file",
       "indexFileName": "index",
       "ignoreSubfolders": false,
-      "enableUnderscorePrefix": false
+      "enableUnderscorePrefix": true
     },
     {
       "id": "content-type-1779263221566-q2j78d410",
@@ -48,31 +48,31 @@
       "creationMode": "file",
       "indexFileName": "index",
       "ignoreSubfolders": false,
-      "enableUnderscorePrefix": false
+      "enableUnderscorePrefix": true
     },
     {
       "id": "content-type-1779263221566-oeys7my65",
       "name": "Notes",
       "folder": "notes",
       "linkBasePath": "/notes/",
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\npublishedAt: \"\"\ncategory: \"\"\n---\n",
+      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\npublishedAt: \"\"\ncategory: \"\"\ntags: []\ndate:\n---\n",
       "enabled": true,
       "creationMode": "file",
       "indexFileName": "index",
       "ignoreSubfolders": false,
-      "enableUnderscorePrefix": false
+      "enableUnderscorePrefix": true
     },
     {
       "id": "content-type-1779263221566-6h8ul65m4",
       "name": "Projects",
       "folder": "projects",
       "linkBasePath": "/projects/",
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\n---\n",
+      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\ntags: []\n---\n",
       "enabled": true,
       "creationMode": "file",
       "indexFileName": "index",
       "ignoreSubfolders": false,
-      "enableUnderscorePrefix": false
+      "enableUnderscorePrefix": true
     },
     {
       "id": "content-type-1779263221566-dvu57aaqj",
@@ -95,77 +95,12 @@
   },
   "showMdxFilesInExplorer": false,
   "processBackgroundFileChanges": true,
-  "syncDraftDate": false,
-  "draftDetectionMode": "property",
+  "syncDraftDate": true,
+  "draftDetectionMode": "underscore-prefix",
   "draftProperty": "",
   "draftLogic": "true-is-draft",
-  "publishDateField": "",
+  "publishDateField": "startDate",
   "renameOnTitleClick": false,
   "updateModifiedDate": false,
-  "modifiedDateField": "",
-  "customContentTypes": [
-    {
-      "id": "content-type-1779263221566-fjqls5kuw",
-      "name": "Blog",
-      "folder": "blog",
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\npublishedAt: \"\"\ntags: []\n---\n",
-      "enabled": true,
-      "linkBasePath": "/blog/",
-      "creationMode": "file",
-      "indexFileName": "index"
-    },
-    {
-      "id": "content-type-1779263221566-33uccdqz7",
-      "name": "Bookmarks",
-      "folder": "bookmarks",
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\n---\n",
-      "enabled": true,
-      "linkBasePath": "/bookmarks/",
-      "creationMode": "file",
-      "indexFileName": "index"
-    },
-    {
-      "id": "content-type-1779263221566-q2j78d410",
-      "name": "Experience",
-      "folder": "experience",
-      "template": "---\ntitle: \"{{title}}\"\nlogo: \"\"\ndescription: \"\"\nstartDate: \"\"\ncurrent: true\nendDate: \"\"\n---\n",
-      "enabled": true,
-      "linkBasePath": "/experience/",
-      "creationMode": "file",
-      "indexFileName": "index"
-    },
-    {
-      "id": "content-type-1779263221566-oeys7my65",
-      "name": "Notes",
-      "folder": "notes",
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\npublishedAt: \"\"\ncategory: \"\"\n---\n",
-      "enabled": true,
-      "linkBasePath": "/notes/",
-      "creationMode": "file",
-      "indexFileName": "index"
-    },
-    {
-      "id": "content-type-1779263221566-6h8ul65m4",
-      "name": "Projects",
-      "folder": "projects",
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\n---\n",
-      "enabled": true,
-      "linkBasePath": "/projects/",
-      "creationMode": "file",
-      "indexFileName": "index"
-    },
-    {
-      "id": "content-type-1779263221566-dvu57aaqj",
-      "name": "Site",
-      "folder": "site",
-      "template": "---\n---\n",
-      "enabled": true,
-      "linkBasePath": "/site/",
-      "creationMode": "file",
-      "indexFileName": "index"
-    }
-  ],
-  "postsFolder": "blog",
-  "creationMode": "file",
-  "indexFileName": "index"
+  "modifiedDateField": ""
 }
